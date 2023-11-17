@@ -1,0 +1,30 @@
+body {
+    background: #EEEEEE;
+}
+
+.topContent {
+    border: 1px solid red;
+}
+
+.mainContent {
+    border: 1px solid blue;
+}
+
+.mainContentLeft {
+    border: 1px solid yellow;
+    float: left;
+}
+
+.mainContentMiddle {
+    border: 1px solid orange;
+    float: left;
+}
+
+.mainContentRight {
+    border: 1px solid green;
+    float: left;
+}
+
+.bottomContent {
+    border: 1px solid violet;
+}

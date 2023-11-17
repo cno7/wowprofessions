@@ -3,26 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WoW Profession List</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    
+    <title>WoW Profession Codex</title>
 </head>
 <body>
     <div class="topContent">
+        <h1>Menu</h1>
+        <p>Staring with the classic professions.</p>
         <!-- Menu part. Filter by level(?). Select version of the game.  -->
     </div>
     <div class="mainConent">
         <!-- This part of the page will basically look like the profession book in-game -->
-        <div class="mainContentLeft">
+        <div class="mainContentLeft" id="mainIdContentLeft">
             <!-- List of the different professions -->
         </div>
-        <div class="mainContentMiddle">
+        <div class="mainContentMiddle" id="mainIdContentMiddle">
+            <!-- Lets pretend blacksmithing and rough sharpening stone is selected -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Skill Needed</th>
+                        <th>Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Rough Sharpening Stone</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Rough Weightstone</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>Copper Mace</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- <ul>
+                <li>Rough Sharpening Stone</li>
+                <li>Tin Bar</li>
+                <li>Bronze Bar</li>
+            </ul> -->
             <!-- Main list of the different things you can learn/make in the profession selected in the list to the left -->
         </div>
-        <div class="mainContentRight">
+        <div class="mainContentRight" id="mainIdContentRight">
+            <h3>Rough Sharpening Stone</h3>
+            <img src="images/blacksmithing/INV_Stone_SharpeningStone_01.png" alt="">
+            <p>Rough Sharpening Stone:</p>
+            <p>Use: Increase sharp weapon damage by 2 for 30 minutes.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Reagents</th>
+                    </tr>
+                    <tr>
+                        <th>Item:</th>
+                        <th>Amount:</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rough Stone</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+
+            </table>
             <!-- Show page like in-game for what's selected in the Main list. Show what, how many, items needed etc ... -->
         </div>
     </div>
     <div class="bottomContent">
-        <!-- Not sure what to have hee :P -->
+        <!-- Not sure what to have here :P -->
     </div>
 </body>
+<script src="baseScript.js"></script>
 </html>
