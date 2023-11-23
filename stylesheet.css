@@ -1,5 +1,23 @@
 body {
     background: #EEEEEE;
+    max-width: max-content;
+    margin: auto;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid black;
+}
+
+td {
+    border-left: 1px solid black;
+}
+
+th {
+    border-left: 1px solid black;
 }
 
 .topContent {
