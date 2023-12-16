@@ -5,8 +5,10 @@
     $pro_row=mysqli_fetch_assoc($pro_query);
 ?>
 <?php
-    do {
-        echo $pro_row['name'] . nl2br("\n") ;
+    do { ?>
+            <a href="list.php?professionID=<?php echo $pro_row['professionID']; ?>"><img src="images/<?php echo $pro_row['name']; ?>/<?php echo $pro_row['name']; ?>.png" alt="<?php echo $pro_row['name']; ?>"></a>
+
+        <?php    echo nl2br("\n") ;
     } while ($pro_row=mysqli_fetch_assoc($pro_query));
 
 ?>
