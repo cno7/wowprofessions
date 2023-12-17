@@ -27,15 +27,15 @@
             <?php include 'templates/professions.php'?>
         </div>
         <div class="mainContentMiddle" id="mainIdContentMiddle">
-            <!-- Lets pretend blacksmithing and rough sharpening stone is selected -->
-            <p>The skill list is empty ...</p>
-            <p>Pick a profession in the list to the left</p>
-            <!-- <ul>
-                <li>Rough Sharpening Stone</li>
-                <li>Tin Bar</li>
-                <li>Bronze Bar</li>
-            </ul> -->
-            <!-- Main list of the different things you can learn/make in the profession selected in the list to the left -->
+
+            <?php 
+                if(!isset($_GET['page'])) { 
+                    include('templates/startMainContent.php'); 
+                }   else {
+                    $page = $_GET['page'];
+                    include("templates/$page.php");
+                }
+            ?>
         </div>
         <div class="mainContentRight" id="mainIdContentRight">
             <h3>Rough Sharpening Stone</h3>
