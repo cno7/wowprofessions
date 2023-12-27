@@ -38,7 +38,19 @@
             ?>
         </div>
         <div class="mainContentRight" id="mainIdContentRight">
-            <h3>Rough Sharpening Stone</h3>
+        <?php 
+                if(!isset($_GET['list'])) { 
+                    include('templates/startMainRight.php'); 
+                }   elseif (isset($_GET['list']) && !isset( $_GET['spellID'])) {
+                    include("templates/noRecipeSelected.php");
+                } else {
+                    $list = $_GET['list'];
+                    include("templates/$list.php");
+                }
+            ?>
+
+
+            <!-- <h3>Rough Sharpening Stone</h3>
             <img src="images/blacksmithing/INV_Stone_SharpeningStone_01.png" alt="">
             <p>Rough Sharpening Stone:</p>
             <p>Use: Increase sharp weapon damage by 2 for 30 minutes.</p>
@@ -59,12 +71,13 @@
                     </tr>
                 </tbody>
 
-            </table>
+            </table> -->
             <!-- Show page like in-game for what's selected in the Main list. Show what, how many, items needed etc ... -->
         </div>
     </div>
     <div class="bottomContent">
         <!-- Not sure what to have here :P -->
+        <?php include("footer.php"); ?>
     </div>
 </body>
 <script src="baseScript.js"></script>

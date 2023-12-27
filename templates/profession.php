@@ -5,7 +5,7 @@
     }
 
     // Selects all profession recipes belonging to the professionID
-    $profession_sql="SELECT name, min_skill FROM skill WHERE professionID=".$_GET['professionID'];
+    $profession_sql="SELECT name, spellID, professionID, min_skill FROM skill WHERE professionID=".$_GET['professionID'];
     if($profession_query=mysqli_query($dbconnect,$profession_sql)) {
         $profession_rs=mysqli_fetch_assoc($profession_query);
     }
@@ -13,11 +13,13 @@
         echo "Sorry, no skills available. Chose another category.";
     } else {
         ?>
-        <p><?php echo $profession_rs['name']; ?> - <?php echo $profession_rs['min_skill']; ?></p>
-        <?php
+        
+        <?php 
         do {
+            ?>
+            <a href="index.php?page=profession&professionID=<?php echo $profession_rs['professionID']; ?>&list=spell&spellID=<?php echo $profession_rs['spellID']; ?>"><p><?php echo $profession_rs['name']; ?> - <?php echo $profession_rs['min_skill']; ?></p></a>
 
-
+            <?php 
         } while($profession_rs=mysqli_fetch_assoc($profession_query));
 
         ?>
