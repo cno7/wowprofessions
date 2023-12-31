@@ -20,8 +20,23 @@ th {
     border-left: 1px solid black;
 }
 
+.skillTextOne {
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    margin-left: 3%;
+}
+
+.skillTextTwo {
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    float: right;
+    margin-right: 3%;
+}
+
 .topContent {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     min-height: 15vh;
     max-height: 15vh;
     overflow-y: scroll;
@@ -50,9 +65,22 @@ th {
     border: 1px solid blue;
 }
 
+.whiteText {
+    color: white;
+    font-size: large;
+    margin-left: 3%;
+}
+
+.skillListLink {
+    border: 1px solid orange;
+}
+
 .mainContentLeft {
-    border: 1px solid yellow;
-    max-width: 20%;
+    /* border: 1px solid yellow; */
+    background-color: black;
+    min-width: 8%;
+    max-width: 8%;
+    min-height: 80vh;
     max-height: 80vh;
     overflow-y: scroll;
     scrollbar-width: none;
@@ -60,12 +88,12 @@ th {
 }
 
 .mainContentMiddle {
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     background-image: url("images/middleBG.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    min-width: 40%;
-    max-width: 40%;
+    min-width: 46%;
+    max-width: 46%;
     min-height: 80vh;
     max-height: 80vh;
     overflow-y: scroll;
@@ -74,13 +102,18 @@ th {
     float: left;
 }
 
+.mainContentMiddle a {
+    color: yellow;
+    text-decoration: none;
+}
+
 .mainContentRight {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     background-image: url("images/rightBG.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    min-width: 40%;
-    max-width: 40%;
+    min-width: 46%;
+    max-width: 46%;
     min-height: 80vh;
     max-height: 80vh;
     overflow-y: scroll;
@@ -91,10 +124,11 @@ th {
 }
 
 .bottomContent {
-    border: 1px solid violet;
+    /* border: 1px solid violet; */
     float: left;
     min-height: 5vh;
     max-height: 5vh;
     min-width: 100%;
     max-width: 100%;
 }
+

@@ -7,8 +7,8 @@
     if($spell_query=mysqli_query($dbconnect, $spell_sql)) {
         $spell_rs=mysqli_fetch_assoc($spell_query);
         ?>
-        <h1><?php echo $spell_rs['name']; ?></h1>
-        <p><?php echo $spell_rs['description']; ?></p>
+        <h1 class="whiteText"><?php echo $spell_rs['name']; ?></h1>
+        <p class="whiteText"><?php echo $spell_rs['description']; ?></p>
 
 
 

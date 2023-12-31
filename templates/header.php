@@ -1,4 +1,4 @@
 <div id="mainLogo">
-        <a href="index.php"><img src="images/logo.png" id="logo" alt="WoWProCodex Logo"></a>
+        <a href="index.php" id="mainLogoAnchor"><img src="images/logo.png" id="logo" alt="WoWProCodex Logo"></a>
 </div>
-        <p>Starting with the classic professions.</p>
+        <p>Skill list of the professions in World of Warcraft Classic.</p>
