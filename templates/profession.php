@@ -18,7 +18,7 @@
         <?php 
         do {
             ?>
-            <a href="index.php?page=profession&professionID=<?php echo $profession_rs['professionID']; ?>&list=spell&spellID=<?php echo $profession_rs['spellID']; ?>"><p class="skillListLink"><?php echo $profession_rs['name']; ?> - <?php echo $profession_rs['min_skill']; ?></p></a>
+            <a href="index.php?page=profession&professionID=<?php echo $profession_rs['professionID']; ?>&list=spell&spellID=<?php echo $profession_rs['spellID']; ?>"><p class="skillListLink"><?php echo $profession_rs['name']; ?> <span class="skillRight"><?php echo $profession_rs['min_skill']; ?></span></p></a>
 
             <?php 
         } while($profession_rs=mysqli_fetch_assoc($profession_query));
